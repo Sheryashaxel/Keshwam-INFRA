@@ -1,0 +1,42 @@
+{
+  "name": "sl-master-saas",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:cf": "npx @opennextjs/cloudflare build",
+    "start": "next start",
+    "lint": "eslint",
+    "preview": "npm run build:cf && npx @opennextjs/cloudflare preview",
+    "deploy": "npm run build:cf && npx @opennextjs/cloudflare deploy"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.10.3",
+    "@supabase/supabase-js": "^2.106.2",
+    "@upstash/redis": "^1.38.0",
+    "clsx": "^2.1.1",
+    "echarts": "^6.1.0",
+    "echarts-for-react": "^3.0.6",
+    "jose": "^6.2.3",
+    "lucide-react": "^1.16.0",
+    "next": "16.2.6",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1",
+    "tailwind-merge": "^3.6.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.1",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.6",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "wrangler": "^4.105.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules/
+.next/
+.open-next/
+.vercel/
+.env*
+npm-debug.log
